@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image: url("./imgs/fundo.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  margin: 224px 400px;
+  width: 600px;
+ 
+}
+
+main .coluna{
+  display: flex;
+  flex-direction: column;
+}
+.coluna div{
+  background-image: url('./imgs/toupeira6.svg');
+  background-repeat: no-repeat;
+  width: 221px;
+  height: 200px;
+}
+main .coluna div{
+transition: all .2s ease-out;
+}
+main .coluna div:hover{
+  scale: 1.1;
+  animation: animarToupeira .4s forwards;
+}
+.primeira{
+  animation: animarToupeira .4s  1s forwards;
+}
+.segunda{
+  animation: animarToupeira .4s  3s forwards;
+}
+.terceira{
+  animation: animarToupeira .4s  6s forwards;
+}
+.quarta{
+  animation: animarToupeira .4s  7s forwards;
+}
+.quinta{
+  animation: animarToupeira .4s  10s forwards;
+}
+.sexta{
+  animation: animarToupeira .4s  12s forwards;
+}
+.setima{
+  animation: animarToupeira .4s  15s forwards;
+}
+.oitava{
+  animation: animarToupeira .4s  18s forwards;
+}
+.nona{
+  animation: animarToupeira .4s  22s forwards;
+}
+.decima{
+  animation: animarToupeira .4s  25s forwards;
+}
+.num11{
+  animation: animarToupeira .4s  27s forwards;
+}
+.num12{
+  animation: animarToupeira .4s  28s forwards;
+}
+.num13{
+  animation: animarToupeira .4s  30s forwards;
+}
+.num14{
+  animation: animarToupeira .4s  32s forwards;
+}
+@keyframes animarToupeira{
+  0%{
+    background-image: url('./imgs/toupeira1.svg');
+  }
+  25%{
+    background-image: url('./imgs/toupeira2.svg');
+  }
+  50%{
+    background-image: url('./imgs/toupeira3.svg');
+  }
+  75%{
+    background-image: url('./imgs/toupeira4.svg');
+  }
+  90%{
+    background-image: url('./imgs/toupeira5.svg');
+  }
+  100%{
+    background-image: url('./imgs/toupeira6.svg');
+  }
+}
